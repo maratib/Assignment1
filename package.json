@@ -1,0 +1,14 @@
+{
+  "name": "assignment1",
+  "version": "0.0.1",
+  "description": "An Assignment",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsc --watch",
+    "start": "node ./dist/index.js",
+    "cache": "node ./dist/MyCache.js",
+    "test": "node ./dist/test.js"
+  },
+  "author": "Maratib Ali Khan",
+  "license": "ISC"
+}
