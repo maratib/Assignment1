@@ -34,13 +34,13 @@ let cache = new MyCache(10);
 
 console.log(cache.hundredTimes(1))
 //=> 100
-console.log(cache.hundredTimes(1)) // cached result should be retunrned intead of calculating again.
+console.log(cache.hundredTimes(1)) // cached result should be returned instead of calculating again.
 //=> 100
 console.log(cache.hundredTimes(2))
 //=> 200
 console.log(cache.hundredTimes(2)) // the same thing for this.
 //=> 200
-console.log(cache.hundredTimes(1)) // cached result should be retunrned again.
+console.log(cache.hundredTimes(1)) // cached result should be returned again.
 //=> 100
 
 

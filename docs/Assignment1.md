@@ -15,6 +15,7 @@ Then you get a bonus point :-)
 
 ### Barebone class definition
 
+```JavaScript
 class MyArray {
   add(value) {
     this.collection.push(value)
@@ -28,9 +29,11 @@ class MyArray {
   }
   
 }
+```
 
 ### Expected results
 
+```JavaScript
 const stringAry = new MyArray()
 stringAry.add('aaa')
 stringAry.add('bbb')
@@ -56,7 +59,7 @@ const numberAndStringMixedAry = new MyArray();
 numberAndStringMixedAry.add(1);
 numberAndStringMixedAry.add('bbb');
 //=> You shouldn't be able to do these. So you shouldn't be able to mix different types.
-
+```
 
 
 ## (2) Error handling
@@ -77,12 +80,13 @@ Say you want to call the same function for several times.
 So I want you to cache the result instead of calculating it again and again.
 
 ### Barebone function definition
-
+```JavaScript
 const hundredTimes = (param: number): number => {
 }
+```
 
 ### Expected results
-
+```JavaScript
 console.log(hundredTimes(1))
 //=> 100
 console.log(hundredTimes(1)) // cached result should be retunrned intead of calculating again.
@@ -93,16 +97,17 @@ console.log(hundredTimes(2)) // the same thing for this.
 //=> 200
 console.log(hundredTimes(1)) // cached result should be retunrned again.
 //=> 100
-
+```
 
 
 ## (4) Crazy query
 
 You might find some issues on this code. Can you rewrite this?
-
+```JavaScript
 public findOneById(id: number): Promise<any> {
   return this.createQueryBuilder('payments')
            .where(`payments.id=${id}`)
            .getMany();
 }
+```
 
