@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "tsc --watch",
-    "start": "node ./dist/index.js",
-    "cache": "node ./dist/MyCache.js",
+    "myarray": "node ./dist/index.js",
+    "mycache": "node ./dist/MyCache.js",
     "test": "node ./dist/test.js"
   },
   "author": "Maratib Ali Khan",
